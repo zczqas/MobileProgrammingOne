@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MobileProgrammingOne</string>
+    <string name="hello">Hello</string>
+    <string name="hello_world">Hello World</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="activity">Activity</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="kung_fu_kitty">Kung Fu Kitty</string>
+    <string name="countries">Countries</string>
+    <string name="profile">profile</string>
+    <string name="profile_icon_button">profile icon button\n</string>
+    <string name="fullName">Fullname:</string>
+    <string name="na">N/A</string>
+    <string name="gender">Gender:</string>
+    <string name="country">Country:</string>
+    <string name="sports">Sports:</string>
+    <string name="go_back">GO BACK</string>
+    <string name="dialog">DIALOG</string>
+
+    <string-array name="country_list">
+        <item>Nepal</item>
+        <item>India</item>
+        <item>United States</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>France</item>
+    </string-array>
+</resources>
