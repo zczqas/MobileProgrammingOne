@@ -18,6 +18,12 @@
     <string name="sports">Sports:</string>
     <string name="go_back">GO BACK</string>
     <string name="dialog">DIALOG</string>
+    <string name="gengar">Gengar</string>
+    <string name="cat">Cat</string>
+    <string name="dice">Dice</string>
+    <string name="fragment_two">FRAGMENT TWO</string>
+    <string name="fragment_one">FRAGMENT ONE</string>
+    <string name="x">X</string>
 
     <string-array name="country_list">
         <item>Nepal</item>
