@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/unit_5_gengar"
+    android:id="@+id/unit_5_dice"
     android:background="@color/transparent"
     android:gravity="center">
 

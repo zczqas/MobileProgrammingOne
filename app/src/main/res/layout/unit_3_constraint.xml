@@ -4,7 +4,7 @@
     android:id="@+id/rootScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gruv_dark_black"
+    android:background="@color/gruv_white"
     android:paddingHorizontal="25dp"
     android:scrollbarStyle="outsideOverlay"
     android:scrollbarThumbVertical="@color/gruv_green">
@@ -14,17 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="60dp">
-
-        <TextView
-            android:id="@+id/footer_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/kung_fu_kitty"
-            android:textAlignment="center"
-            android:textColor="@color/gruv_yellow"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent" />
 
         <TextView
             android:id="@+id/heading_text"
@@ -45,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:autofillHints="name"
-            android:background="@color/gruv_white"
+            android:background="@color/white"
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:paddingHorizontal="20dp"
@@ -112,7 +101,7 @@
             android:text="Which Sports do you like?"
             android:textAlignment="textStart"
             android:textSize="20sp"
-            android:textColor="@color/gruv_white"
+            android:textColor="@color/gruv_black"
             android:layout_marginHorizontal="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -123,7 +112,7 @@
             android:id="@+id/checkbox_football"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/gruv_white"
+            android:textColor="@color/gruv_black"
             android:text="football"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
@@ -137,7 +126,7 @@
             android:id="@+id/checkbox_basketball"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/gruv_white"
+            android:textColor="@color/gruv_black"
             android:text="basketball"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
@@ -150,7 +139,7 @@
             android:id="@+id/checkbox_cricket"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/gruv_white"
+            android:textColor="@color/gruv_black"
             android:text="cricket"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
@@ -164,7 +153,7 @@
             android:id="@+id/checkbox_judo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/gruv_white"
+            android:textColor="@color/gruv_black"
             android:text="judo"
             android:textSize="20sp"
             android:layout_marginTop="10dp"
@@ -179,7 +168,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textAlignment="center"
-            android:textColor="@color/gruv_white"
+            android:textColor="@color/gruv_black"
             android:text="Choose Your Gender !!! "
             android:textSize="20sp"
             app:layout_constraintTop_toBottomOf="@id/checkbox_judo" />
@@ -198,13 +187,13 @@
                 android:id="@+id/radioMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/gruv_white"
+                android:textColor="@color/gruv_black"
                 android:text="Male" />
 
             <RadioButton
                 android:id="@+id/radioFemale"
                 android:layout_width="wrap_content"
-                android:textColor="@color/gruv_white"
+                android:textColor="@color/gruv_black"
                 android:layout_height="wrap_content"
                 android:text="Female" />
 
@@ -212,7 +201,7 @@
                 android:id="@+id/radioOther"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/gruv_white"
+                android:textColor="@color/gruv_black"
                 android:text="Other" />
 
         </RadioGroup>
@@ -223,7 +212,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="20dp"
             android:text="Choose a country"
-            android:textColor="@color/gruv_white"
+            android:textColor="@color/gruv_black"
             android:textSize="20sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -243,13 +232,24 @@
             android:entries="@array/country_list"
             android:spinnerMode="dialog" />
 
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gruv_aqua"
+            android:text="Menu"
+            app:layout_constraintBottom_toTopOf="@id/heading_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/gruv_white" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:layout_marginTop="20dp"
             android:contentDescription="cat image"
             android:scaleType="centerInside"
-            android:src="@drawable/flying_kitty"
+            android:src="@drawable/doce"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/country_spinner" />
 

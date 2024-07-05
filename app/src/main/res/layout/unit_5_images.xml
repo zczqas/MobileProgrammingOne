@@ -4,7 +4,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/images_root">
+    android:id="@+id/images_root"
+    android:background="@color/gruv_white">
+    >
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/images_top_fragment"

@@ -11,6 +11,6 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/gruv_black</item>
-        <!-- Customize your theme here. -->
+        <!-- Custom style for three dots icon in action bar. -->
     </style>
 </resources>

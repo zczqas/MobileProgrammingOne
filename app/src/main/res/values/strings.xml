@@ -24,6 +24,11 @@
     <string name="fragment_two">FRAGMENT TWO</string>
     <string name="fragment_one">FRAGMENT ONE</string>
     <string name="x">X</string>
+    <string name="wow_this_is_a_text_fragment">Wow, this is a text fragment!</string>
+    <string name="services">Services</string>
+    <string name="about">About</string>
+    <string name="theme">Theme</string>
+    <string name="exit">Exit</string>
 
     <string-array name="country_list">
         <item>Nepal</item>

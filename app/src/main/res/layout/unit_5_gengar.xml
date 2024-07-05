@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/unit_5_gengar"
-    android:background="@color/white"
+    android:background="@color/transparent"
     android:gravity="center">
 
     <ImageView
