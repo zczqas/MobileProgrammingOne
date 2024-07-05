@@ -1,8 +1,17 @@
 package com.bca_sixth.mobileprogrammingone.unit_4;
 
-import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.AbsoluteSizeSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.LeadingMarginSpan;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -12,14 +21,20 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import com.bca_sixth.mobileprogrammingone.R;
 
 import java.util.ArrayList;
 
-public class Home extends Activity {
+public class Home extends AppCompatActivity {
     private EditText edit_text;
     private RadioGroup genderGroup;
     private TextView heading_text;
+    private Button menu_button;
+
 
     @Override
     public void onCreate(android.os.Bundle b) {
@@ -42,6 +57,7 @@ public class Home extends Activity {
         Button submit_button = findViewById(R.id.submit_button);
         Button cancel_button = findViewById(R.id.cancel_button);
         Button activity_button = findViewById(R.id.activity_button);
+        menu_button = findViewById(R.id.menu_button);
 
         genderGroup = findViewById(R.id.radioGroup);
         edit_text = findViewById(R.id.edit_text);
@@ -131,7 +147,66 @@ public class Home extends Activity {
     protected void onStart() {
         super.onStart();
         Log.d("my_state", "HomePage - onStart");
+
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.gruv_aqua));
+
+        if (getSupportActionBar() != null) {
+            ActionBar bar = getSupportActionBar();
+            int color = ContextCompat.getColor(this, R.color.gruv_aqua);
+            int textColor = ContextCompat.getColor(this, R.color.gruv_white);
+            Spannable text = new SpannableString(getString(R.string.hello_world));
+
+            text.setSpan(new ForegroundColorSpan(textColor), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+            text.setSpan(new AbsoluteSizeSpan(20, true), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+            text.setSpan(new LeadingMarginSpan.Standard(20), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+
+            bar.setTitle(text);
+            bar.setElevation(10);
+            bar.setBackgroundDrawable(new ColorDrawable(color));
+        }
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.app_options, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int selected_item = item.getItemId();
+
+        if (selected_item == R.id.appOptionsServices) {
+            Toast.makeText(getApplicationContext(), "Services", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        if (selected_item == R.id.appOptionsAbout) {
+            Toast.makeText(getApplicationContext(), "About", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        if (selected_item == R.id.appOptionsTheme) {
+            Toast.makeText(getApplicationContext(), "Theme", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        if (selected_item == R.id.appOptionsExit) {
+            Toast.makeText(getApplicationContext(), "Exit", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        return false;
+    }
+
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        getMenuInflater().inflate(R.menu.app_options, menu);
+    }
+
+    public boolean onContextItemSelected(MenuItem item) {
+        return super.onContextItemSelected(item);
+    }
+
 
     @Override
     protected void onRestart() {
@@ -142,8 +217,9 @@ public class Home extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("my_state", "HomePage - onResume");
-        Toast.makeText(getApplicationContext(), "Resumed", Toast.LENGTH_SHORT).show();
+//        Log.d("my_state", "HomePage - onResume");
+//        Toast.makeText(getApplicationContext(), "Resumed", Toast.LENGTH_SHORT).show();
+        registerForContextMenu(menu_button);
     }
 
     @Override
