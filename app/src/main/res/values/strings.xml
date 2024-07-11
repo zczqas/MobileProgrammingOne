@@ -38,4 +38,28 @@
         <item>Japan</item>
         <item>France</item>
     </string-array>
+
+    <string-array name="warhammer_list">
+        <item>Space Marines</item>
+        <item>Chaos Space Marines</item>
+        <item>Imperial Guard</item>
+        <item>Adeptus Mechanicus</item>
+        <item>Sisters of Battle</item>
+        <item>Necrons</item>
+        <item>Tau Empire</item>
+        <item>Eldar</item>
+        <item>Dark Eldar</item>
+        <item>Tyranids</item>
+        <item>Orks</item>
+        <item>Chaos Daemons</item>
+        <item>Genestealer Cults</item>
+        <item>Imperial Knights</item>
+        <item>Chaos Knights</item>
+        <item>Harlequins</item>
+        <item>Deathwatch</item>
+        <item>Grey Knights</item>
+        <item>Custodes</item>
+        <item>Inquisition</item>
+    </string-array>
+
 </resources>

@@ -29,6 +29,10 @@
         <activity
             android:name=".unit_4.Contact"
             android:exported="true" />
+        
+        <activity
+            android:name=".unit_6.ListViewMain"
+            android:exported="true" />
 
     </application>
 
