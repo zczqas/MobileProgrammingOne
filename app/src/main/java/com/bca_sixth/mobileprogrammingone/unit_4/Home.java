@@ -26,6 +26,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.bca_sixth.mobileprogrammingone.R;
+import com.bca_sixth.mobileprogrammingone.unit_6.ListViewMain;
 
 import java.util.ArrayList;
 
@@ -181,7 +182,8 @@ public class Home extends AppCompatActivity {
         }
 
         if (selected_item == R.id.appOptionsAbout) {
-            Toast.makeText(getApplicationContext(), "About", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(Home.this, ListViewMain.class);
+            startActivity(i);
             return true;
         }
 
