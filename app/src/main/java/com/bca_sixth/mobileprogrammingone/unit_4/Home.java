@@ -26,6 +26,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.bca_sixth.mobileprogrammingone.R;
+import com.bca_sixth.mobileprogrammingone.unit_6.CustomListViewMain;
+import com.bca_sixth.mobileprogrammingone.unit_6.GridViewMain;
 import com.bca_sixth.mobileprogrammingone.unit_6.ListViewMain;
 
 import java.util.ArrayList;
@@ -177,7 +179,8 @@ public class Home extends AppCompatActivity {
         int selected_item = item.getItemId();
 
         if (selected_item == R.id.appOptionsServices) {
-            Toast.makeText(getApplicationContext(), "Services", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(Home.this, GridViewMain.class);
+            startActivity(i);
             return true;
         }
 
@@ -188,7 +191,8 @@ public class Home extends AppCompatActivity {
         }
 
         if (selected_item == R.id.appOptionsTheme) {
-            Toast.makeText(getApplicationContext(), "Theme", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(Home.this, CustomListViewMain.class);
+            startActivity(i);
             return true;
         }
 

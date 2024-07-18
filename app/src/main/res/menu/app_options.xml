@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/appOptionsServices"
+        android:title="@string/services" />
+
+    <item
+        android:id="@+id/appOptionsAbout"
+        android:title="@string/about" />
+
+    <item
+        android:id="@+id/appOptionsTheme"
+        android:title="@string/theme" />
+
+    <item
+        android:id="@+id/appOptionsExit"
+        android:title="@string/exit" />
+</menu>

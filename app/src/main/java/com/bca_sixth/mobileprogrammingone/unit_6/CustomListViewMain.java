@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -15,9 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bca_sixth.mobileprogrammingone.R;
 
-import java.util.Objects;
-
-public class ListViewMain extends AppCompatActivity {
+public class CustomListViewMain extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
@@ -38,15 +35,34 @@ public class ListViewMain extends AppCompatActivity {
         ListView listView = findViewById(R.id.listViewMain);
         ViewGroup rootLayout = findViewById(R.id.listViewMainLayout);
 
-        String[] warhammerList = res.getStringArray(R.array.warhammer_list);
-        ArrayAdapter<String> warhammerAdapter = new ArrayAdapter<>(
-                Objects.requireNonNull(this.peekAvailableContext()),
-                R.layout.unit_3_spinner_item,
-                R.id.spinner_item_text,
-                warhammerList
-        );
+        String[] titleList = res.getStringArray(R.array.f1_drivers_list);
+        String[] descriptionList = res.getStringArray(R.array.f1_drivers_description);
+        int[] imageList = {
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+                R.drawable.dice,
+        };
 
-        listView.setAdapter(warhammerAdapter);
+        CustomListItem customAdapter = new CustomListItem(this, imageList, titleList, descriptionList);
+
+        listView.setAdapter(customAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -59,6 +75,5 @@ public class ListViewMain extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }

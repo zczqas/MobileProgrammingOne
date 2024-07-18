@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/images_root"
+    android:background="@color/gruv_white">
+    >
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/images_top_fragment"
+        android:name="com.bca_sixth.mobileprogrammingone.unit_5.KittyFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/unit_5_cat" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/images_bottom_fragment"
+        android:name="com.bca_sixth.mobileprogrammingone.unit_5.GengarFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/unit_5_gengar" />
+
+</LinearLayout>

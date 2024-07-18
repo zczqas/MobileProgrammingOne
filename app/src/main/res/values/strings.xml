@@ -29,6 +29,7 @@
     <string name="about">About</string>
     <string name="theme">Theme</string>
     <string name="exit">Exit</string>
+    <string name="formula_1_drivers">Formula 1 Drivers</string>
 
     <string-array name="country_list">
         <item>Nepal</item>
@@ -61,5 +62,52 @@
         <item>Custodes</item>
         <item>Inquisition</item>
     </string-array>
+
+    <string-array name="f1_drivers_list">
+        <item>Lewis Hamilton</item>
+        <item>Max Verstappen</item>
+        <item>Charles Leclerc</item>
+        <item>Carlos Sainz</item>
+        <item>Sergio Perez</item>
+        <item>George Russell</item>
+        <item>Fernando Alonso</item>
+        <item>Lando Norris</item>
+        <item>Esteban Ocon</item>
+        <item>Pierre Gasly</item>
+        <item>Valtteri Bottas</item>
+        <item>Guanyu Zhou</item>
+        <item>Yuki Tsunoda</item>
+        <item>Oscar Piastri</item>
+        <item>Kevin Magnussen</item>
+        <item>Nico Hulkenberg</item>
+        <item>Alexander Albon</item>
+        <item>Logan Sargeant</item>
+        <item>Lance Stroll</item>
+        <item>Nyck de Vries</item>
+    </string-array>
+
+    <string-array name="f1_drivers_description">
+        <item>Seven-time World Champion, known for speed, consistency, and advocacy for diversity.</item>
+        <item>Reigning World Champion, aggressive driving style, and known for exceptional racecraft.</item>
+        <item>Talented young driver from Monaco, known for raw speed and qualifying performances.</item>
+        <item>Spanish driver known for consistency and ability to extract the maximum from the car.</item>
+        <item>Mexican driver known for tire management and race strategy, often referred to as the "tyre whisperer."</item>
+        <item>Promising British driver known for impressive performances in both qualifying and races.</item>
+        <item>Two-time World Champion, known for tenacity, racecraft, and vast experience.</item>
+        <item>British driver known for speed, sense of humor, and strong performances at McLaren.</item>
+        <item>French driver known for resilience and strong defensive driving skills.</item>
+        <item>French driver known for comeback after being demoted from Red Bull to AlphaTauri, where first win was scored.</item>
+        <item>Finnish driver known for smooth driving style and strong performances in qualifying.</item>
+        <item>Chinese driver known for being the first full-time F1 driver from China, showing promise in rookie season.</item>
+        <item>Japanese driver known for aggressive driving and quick adaptation to F1.</item>
+        <item>Highly-rated Australian rookie with an impressive junior career, known for technical prowess and speed.</item>
+        <item>Danish driver known for aggressive driving style and strong racecraft.</item>
+        <item>German driver known for experience and consistent performances, often filling in as a super-sub.</item>
+        <item>Thai-British driver known for strong racecraft and adaptability, having returned to F1 after a year out.</item>
+        <item>American rookie showing promise with a strong junior career, looking to make a mark in F1.</item>
+        <item>Canadian driver known for speed and occasional strong performances, supported by father\'s investment in the team.</item>
+        <item>Dutch driver known for versatility across different racing series and late entry into F1.</item>
+    </string-array>
+
 
 </resources>

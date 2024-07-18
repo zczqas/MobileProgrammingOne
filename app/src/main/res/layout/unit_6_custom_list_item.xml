@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gruv_white">
+
+    <ImageView
+        android:id="@+id/customListItemImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dice" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/customListItemImage"
+        android:layout_alignBottom="@id/customListItemImage"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/customListItemImage"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/customListItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gruv_dark_black"
+            android:text="This is a Title."
+            android:textSize="22sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/customListItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/gruv_dark_black"
+            android:text="This is description."
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

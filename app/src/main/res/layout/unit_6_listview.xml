@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listViewMainLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gruv_white">
+
+    <TextView
+        android:id="@+id/listViewMainHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/formula_1_drivers"
+        android:textColor="@color/gruv_dark_black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/listViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@color/gruv_aqua"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="80dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@color/gruv_aqua" />
+
+</LinearLayout>

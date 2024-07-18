@@ -249,7 +249,7 @@
             android:layout_marginTop="20dp"
             android:contentDescription="cat image"
             android:scaleType="centerInside"
-            android:src="@drawable/doce"
+            android:src="@drawable/dice"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/country_spinner" />
 

@@ -12,6 +12,6 @@
         android:layout_height="250dp"
         android:contentDescription="@string/dice"
         android:scaleType="fitCenter"
-        android:src="@drawable/doce" />
+        android:src="@drawable/dice" />
 
 </LinearLayout>
