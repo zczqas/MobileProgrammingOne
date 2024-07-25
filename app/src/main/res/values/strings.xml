@@ -86,6 +86,20 @@
         <item>Nyck de Vries</item>
     </string-array>
 
+    <string-array name="f1_teams_list">
+        <item>Mercedes</item>
+        <item>Red Bull Racing</item>
+        <item>Ferrari</item>
+        <item>McLaren</item>
+        <item>Aston Martin</item>
+        <item>Alpine</item>
+        <item>AlphaTauri</item>
+        <item>Alfa Romeo</item>
+        <item>Williams</item>
+        <item>Haas</item>
+    </string-array>
+
+
     <string-array name="f1_drivers_description">
         <item>Seven-time World Champion, known for speed, consistency, and advocacy for diversity.</item>
         <item>Reigning World Champion, aggressive driving style, and known for exceptional racecraft.</item>
