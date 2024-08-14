@@ -42,6 +42,10 @@
             android:name=".unit_6.GridViewMain"
             android:exported="true" />
 
+        <activity
+            android:name=".unit_6.RecyclerViewListMain"
+            android:exported="true" />
+
     </application>
 
 </manifest>

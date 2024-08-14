@@ -71,7 +71,6 @@ public class CustomListViewMain extends AppCompatActivity {
                 Adapter listAdapter = parent.getAdapter();
                 String value = listAdapter.getItem(position).toString();
                 String message = value + " is selected " + position + " with id " + id;
-
                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
             }
         });

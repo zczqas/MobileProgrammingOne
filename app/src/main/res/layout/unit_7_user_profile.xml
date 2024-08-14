@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userProfileRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gruv_white"
+    android:orientation="vertical"
+    tools:context=".unit_7.UserProfileMain">
+
+    <TextView
+        android:id="@+id/userProfileHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Profile Details"
+        android:textAlignment="center"
+        android:textColor="@color/gruv_black"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/userProfileDividerOne"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@id/userProfileHeading"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/gray" />
+
+    <EditText
+        android:id="@+id/userProfileIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userProfileDividerOne"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="name"
+        android:hint="Enter ID"
+        android:inputType="number"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/userProfileNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userProfileIdInput"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/userProfileAddressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userProfileNameInput"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="name"
+        android:hint="Enter Address"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/userProfileButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userProfileAddressInput"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/userProfileSelectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gruv_green"
+            android:stateListAnimator="@null"
+            android:text="Select"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/userProfileInsertButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gruv_yellow"
+            android:stateListAnimator="@null"
+            android:text="Insert"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/userProfileUpdateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gruv_orange"
+            android:stateListAnimator="@null"
+            android:text="Update"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/userProfileDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gruv_red"
+            android:stateListAnimator="@null"
+            android:text="Delete"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/userProfileDividerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/userProfileButtonContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/gruv_gray" />
+
+    <TextView
+        android:id="@+id/userProfileDataHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userProfileDividerTwo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:text="Data from Database"
+        android:textAlignment="center"
+        android:textColor="@color/gruv_dark_black"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/userProfileListMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userProfileDataHeading"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:divider="@color/gruv_gray"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:overScrollFooter="@color/transparent"
+        android:overScrollHeader="@color/transparent"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="40dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@color/gruv_aqua" />
+</RelativeLayout>

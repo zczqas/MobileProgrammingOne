@@ -11,7 +11,8 @@
         android:gravity="center"
         android:text="@string/hello_world"
         android:textStyle="bold"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:textColor="@color/gruv_black" />
 
     <View
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:paddingTop="40dp"
+        android:paddingTop="10dp"
         android:paddingBottom="80dp"
         android:scrollbarStyle="outsideOverlay"
         android:scrollbarThumbVertical="@color/gruv_aqua"

@@ -30,6 +30,9 @@
     <string name="theme">Theme</string>
     <string name="exit">Exit</string>
     <string name="formula_1_drivers">Formula 1 Drivers</string>
+    <string name="number_1">Number 1</string>
+    <string name="hint">Hint</string>
+    <string name="enter_your_address_here">Enter your address here</string>
 
     <string-array name="country_list">
         <item>Nepal</item>

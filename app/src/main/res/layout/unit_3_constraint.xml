@@ -244,6 +244,7 @@
             android:textColor="@color/gruv_white" />
 
         <ImageView
+            android:id="@+id/image"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:layout_marginTop="20dp"
@@ -253,6 +254,17 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/country_spinner" />
 
+        <Button
+            android:id="@+id/db_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/gruv_aqua"
+            android:text="Database"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/gruv_white" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -52,7 +52,7 @@ public class CustomRecyclerViewListItem extends RecyclerView.Adapter<RecyclerIte
 
         holder.imageView.setOnClickListener(v -> {
             String close = "Circle";
-            String message = driver.getName() + " is selected " + position;
+            String message = driver.getName() + " is selected image" + position;
             Toast.makeText(ctx, message, Toast.LENGTH_SHORT).show();
         });
     }

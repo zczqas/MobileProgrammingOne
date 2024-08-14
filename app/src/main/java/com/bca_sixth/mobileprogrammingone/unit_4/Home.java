@@ -19,7 +19,6 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +28,8 @@ import com.bca_sixth.mobileprogrammingone.R;
 import com.bca_sixth.mobileprogrammingone.unit_6.CustomListViewMain;
 import com.bca_sixth.mobileprogrammingone.unit_6.GridViewMain;
 import com.bca_sixth.mobileprogrammingone.unit_6.ListViewMain;
+import com.bca_sixth.mobileprogrammingone.unit_6.RecyclerViewListMain;
+import com.bca_sixth.mobileprogrammingone.unit_7.UserProfileMain;
 
 import java.util.ArrayList;
 
@@ -60,6 +61,7 @@ public class Home extends AppCompatActivity {
         Button submit_button = findViewById(R.id.submit_button);
         Button cancel_button = findViewById(R.id.cancel_button);
         Button activity_button = findViewById(R.id.activity_button);
+        Button db_button = findViewById(R.id.db_button);
         menu_button = findViewById(R.id.menu_button);
 
         genderGroup = findViewById(R.id.radioGroup);
@@ -129,6 +131,11 @@ public class Home extends AppCompatActivity {
             Intent i = new Intent(Home.this, Contact.class);
             startActivityForResult(i, 1);
         });
+
+        db_button.setOnClickListener(v -> {
+            Intent i = new Intent(Home.this, UserProfileMain.class);
+            startActivity(i);
+        });
     }
 
     @Override
@@ -197,7 +204,8 @@ public class Home extends AppCompatActivity {
         }
 
         if (selected_item == R.id.appOptionsExit) {
-            Toast.makeText(getApplicationContext(), "Exit", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(Home.this, RecyclerViewListMain.class);
+            startActivity(i);
             return true;
         }
 
