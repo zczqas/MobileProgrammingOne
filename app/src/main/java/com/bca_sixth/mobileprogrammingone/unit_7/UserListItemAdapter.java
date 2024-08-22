@@ -14,34 +14,15 @@ import com.bca_sixth.mobileprogrammingone.unit_1.UserInfo;
 
 import java.util.ArrayList;
 
-public class UserListItemAdapter extends ArrayAdapter<String> {
+public class UserListItemAdapter extends ArrayAdapter<UserInfo> {
     Activity ctx;
-    ArrayList<Integer> id;
-    ArrayList<String> name;
-    ArrayList<String> address;
-
-//    public UserListItemAdapter(Activity context, ArrayList<Integer> id, ArrayList<String> name, ArrayList<String> address) {
-//        super(context, R.layout.unit_7_user_list_item, name);
-//
-//        this.id = id;
-//        this.name = name;
-//        this.ctx = context;
-//        this.address = address;
-//    }
+    ArrayList<UserInfo> userInfo;
 
     public UserListItemAdapter(Activity context, ArrayList<UserInfo> userInfoList) {
-        super(context, R.layout.unit_7_user_list_item);
+        super(context, R.layout.unit_7_user_list_item, userInfoList);
 
         this.ctx = context;
-        this.id = new ArrayList<>();
-        this.name = new ArrayList<>();
-        this.address = new ArrayList<>();
-
-        for (UserInfo userInfo : userInfoList) {
-            this.id.add(userInfo.getId());
-            this.name.add(userInfo.getName());
-            this.address.add(userInfo.getAddress());
-        }
+        this.userInfo = userInfoList;
     }
 
     @NonNull
@@ -65,9 +46,11 @@ public class UserListItemAdapter extends ArrayAdapter<String> {
             listItem.setTag(holder);
         } else holder = (UserListItemHolder) listItem.getTag();
 
-        holder.nameView.setText(name.get(position));
-        holder.addressView.setText(address.get(position));
-        holder.idView.setText(String.valueOf(id.get(position)));
+        UserInfo currentData = userInfo.get(position);
+
+        holder.nameView.setText(currentData.getName());
+        holder.addressView.setText(currentData.getAddress());
+        holder.idView.setText(String.valueOf(currentData.getId()));
 
         return listItem;
     }

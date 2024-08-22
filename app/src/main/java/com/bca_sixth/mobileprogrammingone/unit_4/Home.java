@@ -29,7 +29,9 @@ import com.bca_sixth.mobileprogrammingone.unit_6.CustomListViewMain;
 import com.bca_sixth.mobileprogrammingone.unit_6.GridViewMain;
 import com.bca_sixth.mobileprogrammingone.unit_6.ListViewMain;
 import com.bca_sixth.mobileprogrammingone.unit_6.RecyclerViewListMain;
+import com.bca_sixth.mobileprogrammingone.unit_7.MapViewMain;
 import com.bca_sixth.mobileprogrammingone.unit_7.UserProfileMain;
+import com.bca_sixth.mobileprogrammingone.unit_7.UserProfileServerMain;
 
 import java.util.ArrayList;
 
@@ -62,6 +64,8 @@ public class Home extends AppCompatActivity {
         Button cancel_button = findViewById(R.id.cancel_button);
         Button activity_button = findViewById(R.id.activity_button);
         Button db_button = findViewById(R.id.db_button);
+        Button server_button = findViewById(R.id.server_button);
+        Button map_button = findViewById(R.id.map_button);
         menu_button = findViewById(R.id.menu_button);
 
         genderGroup = findViewById(R.id.radioGroup);
@@ -134,6 +138,16 @@ public class Home extends AppCompatActivity {
 
         db_button.setOnClickListener(v -> {
             Intent i = new Intent(Home.this, UserProfileMain.class);
+            startActivity(i);
+        });
+
+        server_button.setOnClickListener(v -> {
+            Intent i = new Intent(Home.this, UserProfileServerMain.class);
+            startActivity(i);
+        });
+
+        map_button.setOnClickListener(v -> {
+            Intent i = new Intent(Home.this, MapViewMain.class);
             startActivity(i);
         });
     }

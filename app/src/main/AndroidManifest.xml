@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,8 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.MobileProgrammingOne"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBlWPMcbMp3_smL-lrBZEGYuMs7NtyVJ6c" />
 
         <activity
             android:name=".unit_4.Home"
@@ -44,6 +51,18 @@
 
         <activity
             android:name=".unit_6.RecyclerViewListMain"
+            android:exported="true" />
+
+        <activity
+            android:name=".unit_7.UserProfileMain"
+            android:exported="true" />
+
+        <activity
+            android:name=".unit_7.UserProfileServerMain"
+            android:exported="true" />
+
+        <activity
+            android:name=".unit_7.MapViewMain"
             android:exported="true" />
 
     </application>

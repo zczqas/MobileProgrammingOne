@@ -126,5 +126,6 @@
         <item>Dutch driver known for versatility across different racing series and late entry into F1.</item>
     </string-array>
 
-
+    <string name="map_title">Look at this map!</string>
+    <string name="this_is_map">This is Map.</string>
 </resources>

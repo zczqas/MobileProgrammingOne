@@ -266,5 +266,29 @@
             app:layout_constraintRight_toRightOf="parent"
             android:textColor="@color/gruv_white" />
 
+        <Button
+            android:id="@+id/server_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/gruv_yellow"
+            android:text="Server"
+            app:layout_constraintTop_toBottomOf="@id/db_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/gruv_white" />
+
+        <Button
+            android:id="@+id/map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/gruv_dark_black"
+            android:text="Map"
+            app:layout_constraintTop_toBottomOf="@id/server_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/gruv_white" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
